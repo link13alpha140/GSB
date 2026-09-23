@@ -27,6 +27,7 @@
         <meta name="author" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="./styles/bootstrap/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
         <link href="./styles/style.css" rel="stylesheet">
     </head>
     <body>
@@ -35,6 +36,7 @@
             $uc = filter_input(INPUT_GET, 'uc', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
             if ($estConnecte) {
                 ?>
+                
             <div class="header">
                 <div class="row vertical-align">
                     <div class="col-md-4">
@@ -45,16 +47,16 @@
                         </h1>
                     </div>
                     <div class="col-md-8">
-                        <ul class="nav nav-pills pull-right" role="tablist">
+                        <ul class="nav nav-pills float-end" role="tablist">
                             <li <?php if (!$uc || $uc == 'accueil') { ?>class="active" <?php } ?>>
                                 <a href="index.php">
-                                    <span class="glyphicon glyphicon-home"></span>
+                                    <span class="bi bi-house"></span>
                                     Accueil
                                 </a>
                             </li>
                             <li <?php if ($uc == 'gererFrais') { ?>class="active"<?php } ?>>
                                 <a href="index.php?uc=gererFrais&action=saisirFrais">
-                                    <span class="glyphicon glyphicon-pencil"></span>
+                                    <span class="bi bi-pencil-fill"></span>
                                     Renseigner la fiche de frais
                                 </a>
                             </li>
