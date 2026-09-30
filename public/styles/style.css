@@ -27,8 +27,25 @@ body > .container {
 }
 footer .container p {
 	text-align: center;
-	color: #337ab7;
+	color: #337ab7 !important;
 }
 code {
   font-size: 80%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.nav-pills .nav-link:hover,
+.btn:hover {
+  text-decoration: none;
+}
+.nav-pills .nav-link:not(.active):hover {
+  background-color: #eee;
+}
+h1, h2, h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
