@@ -61,12 +61,6 @@
                             Afficher mes fiches de frais
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a href="index.php?uc=deconnexion&action=demandeDeconnexion" class="nav-link <?php if ($uc == 'deconnexion') { ?>active<?php } else { ?>link-body-emphasis<?php } ?>">
-                            <span class="bi bi-box-arrow-right me-2"></span>
-                            Déconnexion
-                        </a>
-                    </li>
                 </ul>
                 <hr>
                 <div class="dropdown">
@@ -75,10 +69,6 @@
                         <strong><?= $_SESSION['prenom'] . ' ' . $_SESSION['nom'] ?></strong>
                     </a>
                     <ul class="dropdown-menu text-small shadow">
-                        <li><a class="dropdown-item" href="index.php">Accueil</a></li>
-                        <li><a class="dropdown-item" href="index.php?uc=gererFrais&action=saisirFrais">Renseigner la fiche de frais</a></li>
-                        <li><a class="dropdown-item" href="index.php?uc=etatFrais&action=selectionnerMois">Afficher mes fiches de frais</a></li>
-                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="index.php?uc=deconnexion&action=demandeDeconnexion">Déconnexion</a></li>
                     </ul>
                 </div>
@@ -87,28 +77,9 @@
             }
             ?>
             <div class="container pt-5 pb-4">
-                <?php
-                if ($estConnecte) {
-                    ?>
                 <div class="header">
                     <div class="row vertical-align">
                         <div class="col-md-4">
-                            <h1>
-                                <img src="./images/logo.jpg" class="img-fluid" 
-                                     alt="Laboratoire Galaxy-Swiss Bourdin" 
-                                     title="Laboratoire Galaxy-Swiss Bourdin">
-                            </h1>
                         </div>
                     </div>
                 </div>
-                <?php
-                } else {
-                    ?>   
-                    <h1>
-                        <img src="./images/logo.jpg"
-                             class="img-fluid mx-auto d-block"
-                             alt="Laboratoire Galaxy-Swiss Bourdin"
-                             title="Laboratoire Galaxy-Swiss Bourdin">
-                    </h1>
-                    <?php
-                }
