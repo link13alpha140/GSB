@@ -99,34 +99,6 @@
                                      title="Laboratoire Galaxy-Swiss Bourdin">
                             </h1>
                         </div>
-                        <div class="col-md-8">
-                            <ul class="nav nav-pills float-end" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link <?php if (!$uc || $uc == 'accueil') { ?>active<?php } ?>" href="index.php">
-                                        <span class="bi bi-house"></span>
-                                        Accueil
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link <?php if ($uc == 'gererFrais') { ?>active<?php } ?>" href="index.php?uc=gererFrais&action=saisirFrais">
-                                        <span class="bi bi-pencil-fill"></span>
-                                        Renseigner la fiche de frais
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link <?php if ($uc == 'etatFrais') { ?>active<?php } ?>" href="index.php?uc=etatFrais&action=selectionnerMois">
-                                        <span class="bi bi-card-list"></span>
-                                        Afficher mes fiches de frais
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link <?php if ($uc == 'deconnexion') { ?>active<?php } ?>" href="index.php?uc=deconnexion&action=demandeDeconnexion">
-                                        <span class="bi bi-box-arrow-right"></span>
-                                        Déconnexion
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <?php
