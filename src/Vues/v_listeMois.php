@@ -25,9 +25,9 @@
     <div class="col-md-4">
         <form action="index.php?uc=etatFrais&action=voirEtatFrais" 
               method="post" role="form">
-            <div class="form-group">
-                <label for="lstMois" accesskey="n">Mois : </label>
-                <select id="lstMois" name="lstMois" class="form-control">
+            <div class="mb-3">
+                <label for="lstMois" accesskey="n" class="form-label fw-bold">Mois : </label>
+                <select id="lstMois" name="lstMois" class="form-select">
                     <?php
                     foreach ($lesMois as $unMois) {
                         $mois = $unMois['mois'];
